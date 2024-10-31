@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,28 +7,36 @@ import { GithubIcon, ExternalLinkIcon } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with real-time inventory management.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=400&fit=crop",
-    technologies: ["Next.js", "TypeScript", "Redux", "MongoDB"],
-    github: "#",
+    title: "success story",
+    description: "A website where people share their success stories.",
+    image: "https://img.freepik.com/premium-photo/book-cover-with-title-success_759387-7.jpg?size=626&ext=jpg",
+    technologies: ["React.js", "TypeScript", "Prisma", "PostgreSQL", "Hono"],
+    github: "https://github.com/jatinchary/medium",
+    demo: "https://succussstory-one-blush.vercel.app/",
+  },
+  {
+    title: "Paytm Clone",
+    description: "Developed a Paytm-like wallet application for simulated money transfers between users with 100% success rate.",
+    image: "https://assetscdn1.paytm.com/images/catalog/view_item/764072/1615964143086.png",
+    technologies: ["React", "Node.js", "MongoDb", "Express", "Tailwind"],
+    github: "https://github.com/jatinchary/paytem-karo",
     demo: "#",
   },
   {
-    title: "Task Management System",
-    description: "Enterprise task management system with real-time collaboration features.",
-    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=800&h=400&fit=crop",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
-    github: "#",
-    demo: "#",
+    title: "Spotify Clone",
+    description: "Created a Spotify-like application with features including user authentication, music search, playlist management, and playback, optimized by 50%.",
+    image: "https://brandingforum.org/wp-content/uploads/2023/10/spotify-logo-1024x651.webp",
+    technologies: ["React", "Express", "MongoDb", "Tailwind"],
+    github: "https://github.com/jatinchary/spotify_backend",
+    demo: "https://github.com/jatinchary/spotify_frontend",
   },
   {
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for social media management and monitoring.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop",
-    technologies: ["React", "Express", "Redis", "Chart.js"],
-    github: "#",
-    demo: "#",
+    title: "Visual Context Captioning [PUBLICATION]",
+    description: "Uses a fusion of CNNs and Transformers to generate concise and accurate captions for visual content. Combines CNNs for visual feature extraction and Transformers for sequence processing to enhance accessibility.",
+    image: "https://media.mobidev.biz/2021/07/deep-learning-image-captioning-example-1.jpg?strip=all&lossy=1&ssl=1",
+    technologies: ["CNN", "Transformer", "TensorFlow", "Python"],
+    github: "https://github.com/jatinchary/visual-context-captioning",
+    demo: "https://www.ijcrt.org/papers/IJCRT2403596.pdf",
   },
 ];
 
@@ -60,11 +69,19 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => window.open(project.github, "_blank")}
+                  >
                     <GithubIcon className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button variant="outline" size="sm">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => window.open(project.demo, "_blank")}
+                  >
                     <ExternalLinkIcon className="mr-2 h-4 w-4" />
                     Demo
                   </Button>

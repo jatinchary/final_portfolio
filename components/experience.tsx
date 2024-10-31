@@ -2,23 +2,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "2021 - Present",
-    description: "Led development of enterprise applications using React, Next.js, and Node.js. Implemented microservices architecture and improved system performance.",
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Digital Innovations",
-    period: "2019 - 2021",
-    description: "Developed and maintained multiple web applications. Worked with React, Laravel, and PostgreSQL.",
-  },
-  {
-    title: "Software Engineer",
-    company: "StartUp Tech",
-    period: "2017 - 2019",
-    description: "Built RESTful APIs and implemented front-end features using React and Express.",
-  },
+    title: "Software Engineer Intern",
+    company: "Wallstreet Consulting Services",
+    period: "AUG 2024 - Present",
+    description: [
+      "Engineered scalable web applications leveraging Reactjs for frontend development, PHP/Laravel for backend functionality, and SQL for efficient database management, optimizing performance by 30% and enhancing user experience through responsive design and RESTful APIs.",
+      "Enhanced performance by 40% and user experience through collaborative problem-solving in agile environments.",
+      "Mentored 5 trainees as a Frontend Developer, teaching React.js, JavaScript, Tailwind CSS, and Material UI, increasing team productivity by 30%."
+    ]
+  }
 ];
 
 export function Experience() {
@@ -41,7 +33,11 @@ export function Experience() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{exp.description}</p>
+                <ul className="text-muted-foreground list-disc pl-5 space-y-2">
+                  {exp.description.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
           ))}
