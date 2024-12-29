@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { GithubIcon, LinkedinIcon, MailIcon} from "lucide-react";
+import { GithubIcon, LinkedinIcon, MailIcon,TwitterIcon} from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -21,6 +21,9 @@ export function Hero() {
   const handleResume=()=>{
     window.open("https://drive.google.com/file/d/1Uf_vc7v7Jwoap-OP0Yke8VqLXzvFooUR/view?usp=drive_link","_blank");
   }
+  const handletwitter=()=>{
+    window.open("https://x.com/CharyJatin","_blank");
+  }
 
   return (
     <section className="min-h-screen flex items-center justify-center pt-16">
@@ -36,11 +39,12 @@ export function Hero() {
              L Jatin
             </h1>
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-transparent">
-              Full Stack Developer
+            Web3 &  Full Stack Developer
             </h1>
             <p className="text-xl mb-8 text-muted-foreground max-w-2xl">
               Building robust and scalable applications with modern technologies.
-              Passionate about creating exceptional user experiences.
+Passionate about creating exceptional user experiences.
+I am a Web3 enthusiast and a skilled full-stack developer.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <motion.div
@@ -50,6 +54,15 @@ export function Hero() {
                 <Button variant="outline" size="lg" onClick={handleGithubClick}>
                   <GithubIcon className="mr-2 h-5 w-5" />
                   GitHub
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button variant="outline" size="lg" onClick={handletwitter}>
+                  <TwitterIcon className="mr-2 h-5 w-5" />
+                  X.com
                 </Button>
               </motion.div>
               <motion.div

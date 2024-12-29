@@ -8,11 +8,11 @@ export function About() {
         <Card>
           <CardContent className="p-6">
             <p className="text-lg leading-relaxed">
-              I am a passionate Full Stack Developer with extensive experience in building
-              modern web applications. My journey in software development has equipped me
-              with a deep understanding of both front-end and back-end technologies.
-              I specialize in creating scalable solutions using React.js, Next.js,
-              Node.js, and various other cutting-edge technologies.
+            I am a passionate Full Stack Developer with extensive experience in building modern web applications. My journey in software development has equipped me with a deep understanding of both front-end and back-end technologies.
+
+I specialize in creating scalable solutions using React.js, Next.js, Node.js, and various other cutting-edge technologies. Additionally, I am an enthusiastic Web3 developer, leveraging blockchain technologies to build innovative decentralized applications.
+
+With a proven track record of completing numerous projects, I am committed to delivering high-quality solutions that meet both user and business needs.
             </p>
             <p className="text-lg leading-relaxed mt-4">
               With a strong foundation in computer science and years of practical

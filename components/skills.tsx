@@ -6,6 +6,18 @@ import Image from "next/image";
 
 const skillCategories = [
   {
+    title: "Blockchain & Web3",
+    skills: [
+      { name: "Solidity", icon: "/icons/solidity.svg" },
+      { name: "Rust", icon: "/icons/rust.svg" },
+      { name: "Ethereum", icon: "/icons/ethereum.svg" },
+      { name: "Solana", icon: "/icons/solana.svg" },
+      { name: "Web3.js", icon: "/icons/web3.svg" },
+      { name: "Ethers.js", icon: "/icons/ethereum.svg" },
+      { name: "Foundry", icon: "/icons/foundry.png" }
+    ],
+  },
+  {
     title: "Frontend",
     skills: [
       { name: "React.js", icon: "/icons/react.svg" },

@@ -3,6 +3,7 @@ import { About } from "@/components/about";
 import { Experience } from "@/components/experience";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
+import { Web3projects } from "@/components/web3projects";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
+      <Web3projects/>
       <Projects />
       <Skills />
     </main>
